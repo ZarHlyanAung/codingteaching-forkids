@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Learn JavaScript Game</h1>
+      <div id="intro">
+        <p>
+          Welcome to the Learn JavaScript Game! Let's start your coding journey.
+        </p>
+        <button onclick="startGame()">Start Game</button>
+      </div>
+      <div id="level1" class="hidden">
+        <h2>Level 1: Learning Variables</h2>
+        <p>
+          In this level, you'll learn how to declare and use variables in
+          JavaScript.
+        </p>
+        <code>let x = 10;</code>
+        <p>What is the value of <code>x</code>?</p>
+        <input type="text" id="level1-answer" placeholder="Enter your answer" />
+        <button onclick="checkLevel1()">Submit</button>
+        <p id="level1-feedback"></p>
+      </div>
+      <div id="level2" class="hidden">
+        <h2>Level 2: Learning Loops</h2>
+        <p>In this level, you'll learn how to use loops in JavaScript.</p>
+        <code>
+          let sum = 0;<br />
+          for (let i = 1; i <= 5; i++) {<br />
+          &nbsp;&nbsp;sum += i;<br />
+          }
+        </code>
+        <p>What is the value of <code>sum</code> after the loop?</p>
+        <input type="text" id="level2-answer" placeholder="Enter your answer" />
+        <button onclick="checkLevel2()">Submit</button>
+        <p id="level2-feedback"></p>
+      </div>
+      <div id="level3" class="hidden">
+        <h2>Level 3: Learning Functions</h2>
+        <p>
+          In this level, you'll learn how to create and use functions in
+          JavaScript.
+        </p>
+        <code>
+          function add(a, b) {<br />
+          &nbsp;&nbsp;return a + b;<br />
+          }<br />
+          let result = add(5, 3);
+        </code>
+        <p>What is the value of <code>result</code>?</p>
+        <input type="text" id="level3-answer" placeholder="Enter your answer" />
+        <button onclick="checkLevel3()">Submit</button>
+        <p id="level3-feedback"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
